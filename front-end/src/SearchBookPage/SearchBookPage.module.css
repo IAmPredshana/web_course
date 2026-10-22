@@ -1,0 +1,11 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerForInfo{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,45 @@
+.mainContainer{
+    width: 49%;
+    height: 150px;
+    background-color: rgb(60, 60, 60);
+    border-radius: 5px;
+    outline: 2.5px solid rgb(152, 152, 152);
+    cursor: pointer;
+    transition: all 0.3s;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    
+}
+.mainContainer:hover{
+    outline: 2.5px solid rgb(197, 180, 1);
+}
+
+.isActive{
+    outline: 5px solid rgb(225, 206, 2);
+}
+
+.mainContainer:hover{
+    transform: translateX(-5px) translateY(-5px);
+    box-shadow: 3px 3px 3px 3px rgb(38, 38, 38);
+}
+
+
+.containerInfo,
+.containerImage
+{}
+
+.containerInfo{
+    width: 60%;
+    color: white;
+    font-family: sans-serif;
+}
+
+.containerImage{
+    width: 40%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

@@ -1,0 +1,33 @@
+.mainContainer{
+    background-color: red;
+}
+
+.containerFilterInfoBook{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    
+}
+
+.containerFilterInfoBookFormats{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerFilterAuthors{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+.containerFilterGenres{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(168, 95, 6);
+}
+
+.containerFilterTags{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(75, 157, 17);
+}

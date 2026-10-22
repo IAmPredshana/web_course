@@ -1,0 +1,29 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.innerContainer{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button{
+    font-size: 15px;
+    background-color: gray;
+    border: 1.5px solid gray;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: transparent;
+    border: 1.5px solid #ffd60a;
+    color: #ffd60a;
+    padding: 10px;
+}

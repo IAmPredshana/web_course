@@ -1,0 +1,67 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.containerInner{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.link{
+    margin-top: 15px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.link:hover{
+    color: #ffd60a;
+}
+
+.link::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.link:hover::before{
+    width: 100%;
+    background-color: #ffd60a;
+}
+
+.button{
+    font-size: 15px;
+    background-color: gray;
+    border: 1.5px solid gray;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button:hover{
+    background-color: transparent;
+    border: 1.5px solid #ffd60a;
+    color: #ffd60a;
+    padding: 10px;
+}
+
+.containerInputs{
+    display: flex;
+    flex-direction: column;
+}

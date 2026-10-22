@@ -1,0 +1,11 @@
+.link{
+    font-size: 19px;
+    font-family: monospace;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.link:hover{
+    color: rgb(225, 206, 2);
+}

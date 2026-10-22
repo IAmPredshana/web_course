@@ -1,0 +1,159 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+    max-width: 1900px;
+    margin-inline: auto;
+
+    background-color: rgb(64, 64, 64);;
+    border-radius: 10px;
+    padding: 15px;
+    padding-top: 90px;
+    border: 2.5px solid rgb(98, 98, 98);
+    
+    color: white;
+    font-family: monospace;
+    margin-top: 15px;
+}
+
+.mainContainer::before{
+    position: absolute;
+    content: "Управление книгами";
+    font-size: 25px;
+    font-family: monospace;
+    background-color: rgb(64, 64, 64);;
+    color: white;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(-90%);
+    padding: 5px 10px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.containerButtonBack{
+    display: flex;
+    justify-content: start;
+}
+
+.containerActions{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    max-height: 700px;
+}
+.containerOrderBook{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 15px;
+    position: relative;
+    align-self: start;
+
+    background-color: rgb(87, 87, 87);
+    border-radius: 10px;
+    border: 2.5px solid rgb(121, 121, 121);
+}
+
+.containerOrderBook::before{
+    position: absolute;
+    content: "Создание заявки на публикацию";
+    font-size: 25px;
+    font-family: monospace;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(-90%);
+    padding: 5px 10px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+
+.containerMyBooks{
+    width: 45%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+
+    background-color: rgb(87, 87, 87);
+    border-radius: 10px;
+    border: 2.5px solid rgb(121, 121, 121);
+}
+
+.containerMyBooks::before{
+    position: absolute;
+    content: "Мои публикации";
+    font-size: 25px;
+    font-family: monospace;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(-90%);
+    padding: 5px 10px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.button{
+    text-decoration: none;
+    font-size: 19px;
+    background-color: gray;
+    border: 1.5px solid gray;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.button:hover{
+    background-color: transparent;
+    border: 1.5px solid #ffd60a;
+    color: #ffd60a;
+    padding: 10px;
+}
+
+.allBooks{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    overflow-y: scroll;
+}
+
+.label{
+    font-size: 19px;
+    color: rgb(150, 150, 150);
+    margin-top: 15px;
+}
+
+.input{
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: 1.5px solid rgb(171, 171, 171);
+    background-color: rgb(60, 60, 60);
+    padding: 5px 10px;
+}
+
+.input:hover,
+.input:focus{
+    outline: 3px solid #ffd60a;
+}
+
+.textArea{
+    width: 85%;
+    height: 100px;
+}

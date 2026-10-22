@@ -1,0 +1,122 @@
+.titleContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    margin-bottom: 0;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    font-family: monospace;
+    display: inline;
+    padding: 5px 15px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(36, 36, 36);
+    padding: 50px 15px;
+    border-radius: 10px;
+    min-height: 500px;
+    height: 500px;
+}
+
+.subContainerAllBooks,
+.subContainerInfoBook{
+    width: 45%;
+    border-radius: 9px;
+    position: relative;
+    background-color: rgb(70, 70, 70);
+    border: 2.5px solid rgb(102, 102, 102);
+}
+
+
+.subContainerAllBooks{
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+    align-self: start;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.subContainerInfoBook{
+    padding: 15px;
+}
+
+.subContainerAllBooks::before{
+    position: absolute;
+    content: "Все заявки";
+    font-size: 25px;
+    font-family: monospace;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(-90%);
+    padding: 5px 10px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.subContainerInfoBook::before{
+    position: absolute;
+    content: "Информация о заявке";
+    font-size: 25px;
+    font-family: monospace;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(-90%);
+    padding: 5px 10px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+.containerBooks,
+.containerBookFilters{
+    background-color: rgb(108, 108, 108);
+    border-radius: 7px;
+    border: 2.5px solid rgb(135, 135, 135);
+}
+
+.containerBooks{
+    width: 70%;
+    /* !!!!!! */
+    max-height: 100%; 
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: start;
+    overflow-y: scroll;
+
+    scrollbar-width: thin;
+    scrollbar-color: rgb(53, 53, 53) gray;
+}
+
+.containerBookFilters{
+    width: 30%;
+}
+
+.containerError,
+.containerLoading{
+    padding: 15px;
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;
+    margin-top: 25px;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.containerError{
+    color: rgb(255, 71, 71);
+}
+
+.containerLoading{
+    color: rgb(109, 109, 243);
+}

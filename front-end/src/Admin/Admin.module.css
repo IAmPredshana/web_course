@@ -1,0 +1,33 @@
+.containerLinks{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 25px;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.link:hover{
+    color: #ffd60a;
+}
+
+.link::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.link:hover::before{
+    width: 100%;
+    background-color: #ffd60a;
+}

@@ -1,0 +1,29 @@
+.item{
+    position: relative;
+    margin-top: 25px;
+}
+
+.item::before{
+    font-size: 19px;
+    position: absolute;
+    content: attr(data-title);
+    color: rgb(162, 162, 162);
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+}
+
+.input{
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: 1.5px solid rgb(171, 171, 171);
+    background-color: rgb(60, 60, 60);
+    padding: 5px 10px;
+}
+
+.input:hover,
+.input:focus{
+    outline: 3px solid #ffd60a;
+}

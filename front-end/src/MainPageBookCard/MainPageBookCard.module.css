@@ -1,0 +1,36 @@
+.cardLink{
+    text-decoration: none;
+}
+
+.mainContainer{
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 210px;
+    height: 300px;
+    transition: all 0.3s;
+    outline: 2.1px solid rgb(145, 145, 145);
+    cursor: pointer;
+}
+
+.mainContainer:hover{
+    transform: translateX(-5px) translateY(-5px);
+    box-shadow: 3px 3px 3px 3px rgb(38, 38, 38);
+}
+
+.listInfo{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+.listInfo li{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}

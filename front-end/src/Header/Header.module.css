@@ -1,0 +1,49 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 2.5px solid black;
+    padding-inline: 50px;
+}
+
+.title{
+    font-size: 25px;
+    font-family: monospace;
+    color: #ffd60a;
+    margin: 5px;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s;
+    font-size: 19px;
+}
+
+.link:hover{
+    color: #ffd60a;
+}
+
+.link::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.link:hover::before{
+    width: 100%;
+    background-color: #ffd60a;
+}
+
+.subMenu{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}

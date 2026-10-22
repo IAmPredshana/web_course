@@ -1,0 +1,95 @@
+.mainContainer{
+    background-color: rgb(108, 108, 108);
+    border-radius: 9px;
+    border: 2.5px solid rgb(135, 135, 135);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    font-family: monospace;
+}
+
+.subContainerInfoBook{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.subContainerLinksDownloads{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerInfoBook{
+    width: 60%;
+}
+
+.containerImageBook{
+    width: 30%;
+}
+
+.list{
+    font-size: 19px;
+    color: rgb(234, 234, 234);
+}
+
+.item{
+    list-style: none;
+}
+
+
+.coverBook{
+    width: 150px;
+    border-radius: 5px;
+}
+
+.button{
+    text-decoration: none;
+    font-size: 19px;
+    background-color: gray;
+    border: 1.5px solid gray;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.button:hover{
+    background-color: transparent;
+    border: 1.5px solid #ffd60a;
+    color: #ffd60a;
+}
+
+.approve{
+    background-color: rgba(57, 141, 1, 0.525);
+}
+
+.notApprove{
+    background-color: rgba(141, 1, 1, 0.525);
+}
+
+.approve:hover{
+    border-color: rgba(57, 141, 1, 0.8);
+    color: rgba(57, 141, 1, 0.8);
+}
+
+.notApprove:hover{
+    border-color: rgba(141, 1, 1, 0.8);
+    color: rgba(141, 1, 1, 0.8);
+}
+
+.message{
+    width: 70%;
+    height: 100px;
+    border: 1px solid black;
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
