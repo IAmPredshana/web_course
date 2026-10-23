@@ -1,6 +1,6 @@
 const USERDB="postgres"
 const PASSWORDDB="admin"
-const HOSTDB="localhost"
+const HOSTDB="db"
 const PORTDB=5432
 const DATABASEDB="project_test_1"
 
