@@ -328,12 +328,22 @@ ALTER TABLE ONLY public.rejected_books
 INSERT INTO public.users (email, password_hash, username, role, other_information, image_url)
 VALUES (
     'dino@mail.ru',
-    '$2b$10$wpxdB8hX3nct6ahWVA9H2ORo1NBtFMskoRG.8MtRI9gs0wFdqWfr6',
+    '$2b$10$BCUpSYknqoBWZXgiSWC80OQk7ISQ1Vpr/PrnPuMLpX9WZYknnY4w6',
     'dino',
     'admin',
     'Я админ! Я редактор сайта!',
-    'user_avatars/default.png'
+    '/app/user_avatars/default.png'
 );
+
+--
+-- Formats
+--
+
+INSERT INTO formats VALUES
+    ('txt', 'Text'),
+    ('pdf', 'PDF'),
+    ('epub', 'EPUB');
+
 --
 -- PostgreSQL database dump complete
 --
