@@ -339,7 +339,7 @@ VALUES (
 -- Formats
 --
 
-INSERT INTO formats VALUES
+INSERT INTO public.formats(code, title) VALUES
     ('txt', 'Text'),
     ('pdf', 'PDF'),
     ('epub', 'EPUB');
